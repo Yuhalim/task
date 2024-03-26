@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      .wall{
+        height: 150vh;
+        width: 100%;
+        position: absolute;
+        margin-bottom: 70px;
+        z-index: 1;
+      }
+      .cloud{
+        position: absolute;
+        z-index: 2;
+        width: 350px;
+        animation: cloud 8s linear;
+        animation-play-state: running;
+        animation-iteration-count: infinite;
+      }
+      @keyframes cloud{
+        0%{
+          transform: translateX(-262px);
+        }
+        10%{
+          transform: translateX(0px)
+        }
+        20%{
+          transform: translateX(162px)
+        }
+        30%{
+          transform: translateX(324px);
+        }
+        40%{
+          transform: translateX(486px);
+        }
+        50%{
+          transform: translateX(648px);
+        }
+        60%{
+          transform: translateX(810px);
+        }
+        70%{
+          transform: translateX(972px);
+        }
+        80%{
+          transform: translateX(1134px);
+        }
+        90%{
+          transform: translateX(1296px);
+        }
+        100%{
+          transform: translateX(1458px);
+        }
+      }
+      .cloud2{
+        position: absolute;
+        margin-top: 200px;
+        z-index: 2;
+        width: 350px;
+        animation: cloud2 7s linear;
+        animation-play-state: running;
+        animation-iteration-count: infinite;
+        margin-left: 1296px;
+      }
+      .cloud3{
+        margin-top: 400px;
+        position: absolute;
+        z-index: 2;
+        width: 350px;
+        animation: cloud 8s linear;
+        animation-play-state: running;
+        animation-iteration-count: infinite;
+      }
+      .cloud4{
+        margin-top: 600px;
+        position: absolute;
+        z-index: 2;
+        width: 350px;
+        animation: cloud2 7s linear;
+        animation-play-state: running;
+        animation-iteration-count: infinite;
+        margin-left: 1296px;
+
+      }
+      @keyframes cloud2{
+        0%{
+          transform: translateX(192px);
+        }
+        10%{
+          transform: translateX(0px);
+        }
+        20%{
+          transform: translateX(-232px);
+        }
+        30%{
+          transform: translateX(-394px);
+        }
+        40%{
+          transform: translateX(-556px);
+        }
+        50%{
+          transform: translateX(-718px);
+        }
+        60%{
+          transform: translateX(-880px);
+        }
+        70%{
+          transform: translateX(-1042px);
+        }
+        80%{
+          transform: translateX(-1204px);
+        }
+        90%{
+          transform: translateX(-1366px);
+        }
+        100%{
+          transform: translateX(-1548px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div>
+      <img class="cloud" src="cloud.png">
+    </div>
+
+    <div>
+      <img class="cloud3" src="cloud.png">
+    </div>
+    <div>
+      <img class="cloud2" src="cloud.png">
+    </div>
+    <div>
+      <img class="cloud4" src="cloud.png">
+    </div>
+    <div>
+      <!-- <img src="cloud.png" alt=""> -->
+      <img class="wall" src="wallpaper1.jpg">
+    </div>
+    <div id="app">
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
